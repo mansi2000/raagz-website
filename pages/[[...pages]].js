@@ -31,15 +31,20 @@ export async function getStaticPaths() {
   // Get a list of all pages in builder
   const pages = await builder.getAll('page', {
     // We only need the URL field
-    fields: 'data.url', 
+    fields: 'data.url',
     options: { noTargeting: true },
   });
 
+  // Exclude specific paths from the list
+  const excludedPaths = ['/about', '/courses', '/rentals'];
+  const filteredPages = pages.filter(page => !excludedPaths.includes(page.data?.url));
+
   return {
-    paths: pages.map(page => `${page.data?.url}`),
+    paths: filteredPages.map(page => `${page.data?.url}`),
     fallback: true,
   };
 }
+
 
 export default function Page({ page }) {
   const router = useRouter();
