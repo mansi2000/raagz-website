@@ -36,7 +36,7 @@ const Header = () => {
         nav ul {
           list-style: none;
           display: flex;
-          justify-content: center;
+          justify-content: right;
         }
 
         nav ul li {

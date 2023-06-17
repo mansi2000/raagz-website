@@ -44,8 +44,8 @@ const Footer = () => {
           <p>© 2023 Raagz. All rights reserved.</p>
         </div>
         <style jsx>{`
-        header {
-          background-color: #000000;
+        footer {
+          background-color: #4A4A4A;
           padding: 20px;
         }
 
