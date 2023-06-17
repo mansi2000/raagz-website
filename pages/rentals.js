@@ -21,7 +21,6 @@ export async function getStaticProps() {
   };
 }
 
-
 const RentalPage = ({ page }) => {
   return (
     <Layout>

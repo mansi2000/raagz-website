@@ -21,7 +21,6 @@ export async function getStaticProps() {
   };
 }
 
-
 const AboutPage = ({ page }) => {
   return (
     <Layout>

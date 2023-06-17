@@ -27,6 +27,7 @@ export async function getStaticProps({ params }) {
   };
 }
 
+
 export async function getStaticPaths() {
   // Get a list of all pages in builder
   const pages = await builder.getAll('page', {

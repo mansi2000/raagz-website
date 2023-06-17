@@ -21,7 +21,6 @@ export async function getStaticProps() {
   };
 }
 
-
 const CoursePage = ({ page }) => {
   return (
     <Layout>
