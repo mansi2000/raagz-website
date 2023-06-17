@@ -1,16 +1,18 @@
+import Link from 'next/link';
+
 const Footer = () => {
     return (
       <footer>
         <div>
           <ul>
             <li>
-              <a href="/terms">Terms of Service</a>
+              <Link href="/terms">Terms of Service</Link>
             </li>
             <li>
-              <a href="/privacy">Privacy Policy</a>
+              <Link href="/privacy">Privacy Policy</Link>
             </li>
             <li>
-              <a href="/refund">Refund Policy</a>
+              <Link href="/refund">Refund Policy</Link>
             </li>
           </ul>
         </div>
@@ -18,19 +20,19 @@ const Footer = () => {
           <p>Follow Us:</p>
           <ul>
             <li>
-              <a href="https://www.facebook.com/raagz" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.facebook.com/raagz" target="_blank" rel="noopener noreferrer">
                 Facebook
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.twitter.com/raagz" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.twitter.com/raagz" target="_blank" rel="noopener noreferrer">
                 Twitter
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.instagram.com/raagz" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.instagram.com/raagz" target="_blank" rel="noopener noreferrer">
                 Instagram
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
