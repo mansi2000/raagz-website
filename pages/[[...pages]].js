@@ -37,7 +37,7 @@ export async function getStaticPaths() {
   });
 
   // Exclude specific paths from the list
-  const excludedPaths = ['/about', '/courses', '/rentals'];
+  const excludedPaths = ['/about', '/courses', '/rentals', '/courses/ukulele'];
   const filteredPages = pages.filter(page => !excludedPaths.includes(page.data?.url));
 
   return {
