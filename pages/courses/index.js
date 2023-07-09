@@ -1,4 +1,4 @@
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
 import { BuilderComponent, builder, useIsPreviewing } from '@builder.io/react';
 
 builder.init("86f5d179d02a4930900a5317a3da5d45");
