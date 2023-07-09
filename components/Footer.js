@@ -17,30 +17,6 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <p>Follow Us:</p>
-          <ul>
-            <li>
-              <Link href="https://www.facebook.com/raagz" target="_blank" rel="noopener noreferrer">
-                Facebook
-              </Link>
-            </li>
-            <li>
-              <Link href="https://www.twitter.com/raagz" target="_blank" rel="noopener noreferrer">
-                Twitter
-              </Link>
-            </li>
-            <li>
-              <Link href="https://www.instagram.com/raagz" target="_blank" rel="noopener noreferrer">
-                Instagram
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p>Subscribe to Our Newsletter</p>
-          {/* Add newsletter subscription form */}
-        </div>
-        <div>
           <p>© 2023 Raagz. All rights reserved.</p>
         </div>
         <style jsx>{`
