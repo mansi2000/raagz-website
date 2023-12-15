@@ -6,7 +6,7 @@ import Head from 'next/head';
 import Layout from '../components/Layout';
 
 
-// Replace with your Public API Key
+// Replace with your Public API  Key
 builder.init("86f5d179d02a4930900a5317a3da5d45");
 
 export async function getStaticProps({ params }) {
