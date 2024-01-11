@@ -17,7 +17,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <p>© 2023 Raagz. All rights reserved.</p>
+          <p>© 2024 Madyam Music Private Limited. All rights reserved.</p>
         </div>
         <style jsx>{`
         footer {
