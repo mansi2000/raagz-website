@@ -1,0 +1,109 @@
+/* Base container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black; /* Light grey background */
+    padding: 20px;
+  }
+  
+  /* Main content area */
+  .main {
+    width: 100%;
+    max-width: 1200px; /* Max width for content */
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    background: black; /* White background for the main content */
+  }
+  
+  /* Search bar container */
+  .searchBarContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Search bar styling */
+  .searchBar {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px 15px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 20px; /* Rounded edges */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Light shadow for depth */
+  }
+  
+  /* Grid layout for products */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Card styling for each product */
+  .card {
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures content fits within the border radius */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Lift card on hover for interactive effect */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Shadow on hover */
+  }
+  
+  /* Product image styling */
+  .productImage img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #e1e1e1; /* Border between image and text */
+  }
+  
+  /* Product name styling */
+  .card h3 {
+    font-size: 1.2em;
+    margin: 10px;
+    color: #333; /* Dark grey for text */
+  }
+  
+  /* Product description styling */
+  .card p {
+    font-size: 1em;
+    margin: 10px;
+    color: #666; /* Light grey for description */
+  }
+
+  /* Product Detail Page Styles */
+
+.productDetail h1 {
+  font-size: 2em; /* Larger font size for the product name */
+  color: #333; /* Dark grey for heading */
+  margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.productDetail .imageContainer img {
+  max-width: 30%; /* Ensure image responsiveness */
+  height: auto;
+  border-radius: 5px; /* Slightly rounded corners for the image */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+.productDetail p {
+  font-size: 1em;
+  color: #666; /* Light grey for the paragraph */
+  line-height: 1.6; /* Improved readability for longer text */
+  margin-bottom: 10px; /* Consistent spacing between paragraphs */
+}
+
+.productDetail p.description {
+  font-style: italic; /* Italicize the description for emphasis */
+}
+
+/* Additional styles for other product details and components can be added here */
+
+  

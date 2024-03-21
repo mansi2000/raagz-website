@@ -1,0 +1,42 @@
+[
+    {
+      "productID": 100,
+      "productName": "Kasper K10C",
+      "productDescription": "gold",
+      "productCategory":"guitar",
+      "productImage": "https://m.media-amazon.com/images/I/31Mcm7PpchL._SX300_SY300_QL70_FMwebp_.jpg",
+      "productSecurity": "gold",
+      "productPrice": "gold",
+      "productAvailable": 3
+    },
+    {
+      "productID": 2,
+      "productName": "Yamaha F310",
+      "productDescription": "gold",
+      "productCategory":"guitar",
+      "productImage": "https://m.media-amazon.com/images/I/31Mcm7PpchL._SX300_SY300_QL70_FMwebp_.jpg",
+      "productSecurity": "gold",
+      "productPrice": "gold",
+      "productAvailable": 1
+    },
+    {
+      "productID": 3,
+      "productName": "Kadence concert ukulele",
+      "productDescription": "gold",
+      "productCategory":"ukulele",
+      "productImage": "https://m.media-amazon.com/images/I/31Mcm7PpchL._SX300_SY300_QL70_FMwebp_.jpg",
+      "productSecurity": "gold",
+      "productPrice": "gold",
+      "productAvailable": 1
+    },
+    {
+      "productID": 4,
+      "productName": "Kadence wanderer series ukulele",
+      "productDescription": "gold",
+      "productCategory":"ukulele",
+      "productImage": "https://m.media-amazon.com/images/I/31Mcm7PpchL._SX300_SY300_QL70_FMwebp_.jpg",
+      "productSecurity": "gold",
+      "productPrice": "gold",
+      "productAvailable": 1
+    }
+  ]
