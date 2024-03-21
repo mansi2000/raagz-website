@@ -17,7 +17,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <p>© 2024 Madyam Music Private Limited. All rights reserved.</p>
+          <p className="centered-text">© 2024 Madyam Music Private Limited. All rights reserved.</p>
         </div>
         <style jsx>{`
         footer {
@@ -43,6 +43,12 @@ const Footer = () => {
 
         .div-link:hover {
           color: #666;
+        }
+
+        .centered-text {
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
         }
       `}</style>
       </footer>
