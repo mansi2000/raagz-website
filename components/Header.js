@@ -1,58 +1,37 @@
+import styles from '../styles/Header.module.css'
+import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
+
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <header>
-      <nav>
+    <header className={styles.header}>
+      <div className={styles.logo}>
+        <Image src='/assets/black and white raagz logo.png' alt="Logo" width={100} height={50} />
+      </div>
+      {/* Hamburger Icon */}
+      <button className={styles.hamburger} onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      {/* Navigation Menu */}
+      <nav className={`${styles.nav} ${isMenuOpen ? styles.show : ''}`}>
         <ul>
-          <li>
-            <Link href="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/courses">
-              Courses
-            </Link>
-          </li>
-          <li>
-            <Link href="/rentals">
-              Instrument Rentals
-            </Link>
-          </li>
-          <li>
-            <Link href="/about">
-              About Us
-            </Link>
-          </li>
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/courses">Courses</Link></li>
+          <li><Link href="/rentals">Rentals</Link></li>
+          <li><Link href="/about">About us</Link></li>
         </ul>
       </nav>
-      <style jsx>{`
-        header {
-          background-color: #000000;
-          padding: 20px;
-        }
-
-        nav ul {
-          list-style: none;
-          display: flex;
-          justify-content: right;
-        }
-
-        nav ul li {
-          margin-right: 20px;
-        }
-
-        .nav-link {
-          color: #333;
-          text-decoration: none;
-          font-weight: bold;
-        }
-
-        .nav-link:hover {
-          color: #666;
-        }
-      `}</style>
     </header>
   );
 };
