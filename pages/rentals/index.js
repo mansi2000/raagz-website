@@ -9,23 +9,20 @@ const RentalPage = ({ page }) => {
     // Dummy data for the products
     // open product.json and extract the properties from it
     const products = productData;
-    console.log(products)
-    //print(products);
-    // const products = [
-    //   { id: 1, name: 'Product 1', description: 'Rent', image:'https://m.media-amazon.com/images/I/31Mcm7PpchL._SX300_SY300_QL70_FMwebp_.jpg' },
-    //   { id: 2, name: 'Product 2', description: 'Rent', image:'https://m.media-amazon.com/images/I/31Mcm7PpchL._SX300_SY300_QL70_FMwebp_.jpg' },
-    //   { id: 3, name: 'Product 3', description: 'Rent', image:'https://m.media-amazon.com/images/I/31Mcm7PpchL._SX300_SY300_QL70_FMwebp_.jpg' },
-    //   { id: 4, name: 'Product 4', description: 'Rent', image:'https://m.media-amazon.com/images/I/31Mcm7PpchL._SX300_SY300_QL70_FMwebp_.jpg' },
-    //   { id: 5, name: 'Product 5', description: 'Rent', image:'https://m.media-amazon.com/images/I/31Mcm7PpchL._SX300_SY300_QL70_FMwebp_.jpg' },
-    //   { id: 6, name: 'Product 6', description: 'Rent', image:'https://m.media-amazon.com/images/I/31Mcm7PpchL._SX300_SY300_QL70_FMwebp_.jpg' },
-    // ];
-  
-    // State for the search query
+
+      // State for the search query
     const [searchQuery, setSearchQuery] = useState('');
-  
+
     const handleSearchChange = (event) => {
-      setSearchQuery(event.target.value);
+      setSearchQuery(event.target.value.toLowerCase());
     };
+
+    // Filter products based on search query
+    const filteredProducts = productData.filter(
+      (product) =>
+        product.productName.toLowerCase().includes(searchQuery) ||
+        product.productCategory.toLowerCase().includes(searchQuery)
+    );
   
   return (
     <Layout>
@@ -41,7 +38,7 @@ const RentalPage = ({ page }) => {
             />
           </div>
           <div className={styles.grid}>
-            {products.map((product) => (
+            {filteredProducts.map((product) => (
               <Link key={product.productID} href={`/rentals/${product.productID}`} passHref>
                 <div className={styles.card}>
                   <div className={styles.productImage}>
